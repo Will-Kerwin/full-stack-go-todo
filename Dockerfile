@@ -71,7 +71,7 @@ USER appuser
 
 # Copy the executable from the "build" stage.
 COPY --from=build /bin/server /bin/
-
+COPY ./.env .
 # Expose the port that the application listens on.
 EXPOSE ${PORT}
 
